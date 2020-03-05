@@ -121,11 +121,11 @@ color: #e5e5e5;
 Добавьте контакт (имя пользователя или почтовый список) в скобках в формате `TODO (контакт)`.
 Добавьте метки действий после двоеточия: `TODO: действие`.
 ```html
-{# TODO(john.doe): revisit centering #}
+{# TODO(john.doe): Пересмотреть центрирование #}
 <center>Test</center>
 ```
 ```html
-<!-- TODO: remove optional tags -->
+<!-- TODO: удалить необязательные теги -->
 <ul>
   <li>Apples</li>
   <li>Oranges</li>
