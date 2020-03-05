@@ -12,6 +12,9 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     *<!-- Не рекомендуется: используется HTTP -->*
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Рекомендуется -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   
 *CSS:*
   
@@ -19,18 +22,14 @@
     @import '//fonts.googleapis.com/css?family=Open+Sans';
     /* Не рекомендуется: используется HTTP */
     @import 'http://fonts.googleapis.com/css?family=Open+Sans';
-    
-Рекомендации:
   
-    <!-- Рекомендуется -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     /* Рекомендуется */
     @import 'https://fonts.googleapis.com/css?family=Open+Sans';
 
 ## 2.2 Общие правила форматирования
 ### 2.2.1 Отступы
 Используйте 2 пробела в отступе.
-Не используйте табы или табы и пробелы для отступов.
+Не используйте табуляцию или табуляцию с пробелами для отступов.
 
 *HTML:*
 
@@ -44,3 +43,33 @@
     .example {
       color: blue;
     }
+
+### 2.2.2 Регистр
+Используйте только нижний регистр.
+Весь код должен быть в нижнем регистре. Это применяется к тегам HTML-элементов, аттрибутам, значениям аттрибутов (кроме >text/CDATA), CSS селекторов, свойств и значений свойств (за исключением строк).
+
+*HTML*
+
+    <!-- Не рекомендуется -->
+    <A HREF="/">Home</A>
+
+    <!-- Рекомендуется -->
+    <img src="google.png" alt="Google">
+
+*CSS*
+
+    /* Не рекомендуется */
+    color: #E5E5E5;
+
+    /* Рекомендуется */
+    color: #e5e5e5;
+
+### 2.2.3 Заканчивающий пробел
+Удалите заканчивающие строку пробелы.
+Заканчивающие пробелы необязательны и могут усложнять сравнение файлов.
+
+    <!-- Не рекомендуется -->
+    <p>What?_
+
+    <!-- Рекомендуется -->
+    <p>Yes please.
